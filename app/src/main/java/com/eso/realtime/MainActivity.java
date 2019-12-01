@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                                Toasty.error(MainActivity.this,databaseError.getMessage(),Toast.LENGTH_SHORT).show();
                             }
                         });
             }
@@ -149,10 +149,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
-
-
-/*
- * Send Request Tracking
- * Accept / Decline request Tracking
- * Location tracking from background*/

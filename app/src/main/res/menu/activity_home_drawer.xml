@@ -3,4 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+   <group android:checkableBehavior="single">
+       <item android:id="@+id/nav_find_people"
+           android:icon="@drawable/ic_find_replace_black_24dp"
+           android:title="@string/find_people"/>
+
+       <item android:id="@+id/nav_add_people"
+           android:icon="@drawable/ic_person_add_black_24dp"
+           android:title="@string/friend_request"/>
+   </group>
+
+    <item android:title="@string/system">
+        <menu>
+            <item android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/sign_out"/>
+        </menu>
+    </item>
+
 </menu>
