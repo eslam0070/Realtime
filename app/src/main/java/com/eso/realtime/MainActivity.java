@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showSignInOption() {
-        startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers)
+        startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().setIsSmartLockEnabled(false)
+                .setAvailableProviders(providers)
                 .build(), MY_REQUEST_CODE);
     }
 
